@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript sample</title>
+    <style>
+
+        #divContainer {
+            text-align: center;
+        }
+        /* pang class name */
+        .redText {
+            color: red;
+            background-color: #bebebe;
+            margin: 1rem;
+        }
+
+        /* sample ng may event */
+        .redText:hover {
+            color: blue;
+            background-color: lime;
+        }
+        /*  */
+        div {
+            margin-bottom: 1rem;
+            
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divContainer">
+        <h1>login</h1>
+        <div><input type="text" placeholder="username" class="redText"> </div>
+        <div><input type="password" placeholder="password" class="redText"></div>
+        <div><button id="buttonLogin">Login</button></div>
+    </div>
+</body>
+<script>
+    /* javascript*/
+    alert("hello Comrade");
+
+    console.log("hello world", 1+1);
+
+    let buttonLogin = document.querySelector("#buttonLogin")
+    buttonLogin.onclick = function () {
+        alert("Login successful");
+    } 
+</script>
+
+</html>
